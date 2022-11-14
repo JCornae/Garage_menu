@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #0000008e;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 489px;
+  min-height: 542px;
+  max-height: 542px;
+  background-color: #444444;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(180deg, #8b3131 0%, #121212 100%);
+}
+
+.head-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45.28px;
+  color: #eee;
+  height: 45.28px;
+  background: linear-gradient(135deg, #cbba63 0%, #9b871c 100%);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.head label p1 {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #eeeeee;
+}
+
+.head label p {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 6px;
+  line-height: 11px;
+  color: #eeeeee;
+}
+
+.main-box {
+  width: 100%;
+  height: 460px;
+  overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 460px;
+  height: 100px;
+  margin: 0.9rem;
+  background-color: #161616;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.box-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 109px;
+  height: 61px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.car-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn.discordapp.com/attachments/1015267759438966875/1039648709853597827/image.png);
+  background-size: cover;
+}
+
+.car-info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 225px;
+  height: 100%;
+}
+
+.car-status {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #eeeeee;
+}
+
+.fa-pen-to-square {
+  font-size: 1.3ch;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.fa-pen-to-square:hover {
+  transition: 0.1s;
+  scale: 1.1;
+}
+
+.plate {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #989898;
+  margin-bottom: 5px;
+}
+
+.plate span {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #eeeeee;
+  margin-left: 5px;
+}
+
+.fuel {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #eeeeee;
+}
+
+.fuel i {
+  color: #535353;
+  margin-right: 5px;
+}
+
+.load {
+  position: absolute;
+  width: 151px;
+  height: 7px;
+  left: 25%;
+  background-color: #313030;
+  border-radius: 2px;
+}
+
+.out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #eeeeee;
+  line-height: 16px;
+  height: 23px;
+  background: linear-gradient(135deg, #cbba63 0%, #9b871c 100%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.out-fix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #eeeeee;
+  height: 23px;
+  background: linear-gradient(135deg, #cbba63 0%, #9b871c 100%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.out-fix i,
+.out i {
+  margin-right: 5px;
+}
+
+.car-status label {
+  font-family: "Mitr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #eeeeee;
+  margin-bottom: 5px;
+}
+
+.out-fix:hover,
+.out:hover {
+  transition: 0.1s;
+  scale: 1.1;
+}
+
+.fuel-status {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(90.69deg, #f13a36 0%, #ff534e 100%);
+  border-radius: 2px;
+}
+
+.engine-status {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(90.69deg, #2de959 0%, #2c9f47 100%);
+  border-radius: 2px;
+}
+
+.search {
+  position: absolute;
+  overflow: hidden;
+  width: 135px;
+  height: 25px;
+  bottom: 10%;
+  right: 2%;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  height: 30px;
+  text-align: left;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.search-input {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  color: #EEEEEE;
+  font-size: 1ch;
+  right: 0;
+  top: 0;
+  background: linear-gradient(135deg, #cbba63 0%, #9b871c 100%);
+  border-radius: 5px;
+}
